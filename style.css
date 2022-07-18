@@ -21,7 +21,7 @@ li, a, button {
     align-items: center;
     color: #ffffff;
     margin-top: 2rem;
-    position: absolute;
+    position: relative;
     width: 100%;
     
 }
@@ -118,23 +118,30 @@ li, a, button {
 }
 --------------------------------------FAQ
 .faq {
-    font-size: 80px;
-    color: white;
+    padding: 50rem;
+    font-size: 800px;
     text-align: left;
-    padding-left: 300px;
-    padding-right: 300px;
-    padding-top: 100px;
-}
-.faq p {
-    padding-top: 20px;
-}
-.faq h2 {
-    padding-top: 30px;
-}
-.faq a {
-    font-size: 10px;
     
 }
+.faq h2 {
+    position: static;
+    text-align: center;
+    padding: 1rem;
+    color:white;
+}
+.faq p {
+    text-align: center;
+    padding: 1rem;
+    color:white;
+    text-align: ;
+
+}
+.faq a {
+    text-align: center;
+    padding: 1rem;
+}
+
+
 --------------------------------------CONTACT
 .contact {
     font-size: 10px;
