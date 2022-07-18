@@ -118,10 +118,9 @@ li, a, button {
 }
 --------------------------------------FAQ
 .faq {
-    font-size: 8px;
+    font-size: 80px;
     color: white;
     text-align: left;
-    
     padding-left: 300px;
     padding-right: 300px;
     padding-top: 100px;
