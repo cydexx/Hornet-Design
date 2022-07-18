@@ -70,10 +70,8 @@ li, a, button {
 .shop-title {
     color: white;
     text-align: center;
-    padding-top: 10rem;
-    padding-bottom: 2rem;
-    font-size: 10px;
-    
+    padding-bottom: 3rem;
+    font-size: 12px;
 }
 .shop-list {
    text-align: center;
@@ -87,19 +85,46 @@ li, a, button {
 .shop-list ul li a{
     font-size: 15px;
 }
-.shop-list ul li a:hover{
-    opacity: 0.7;
+.shop-list ul li a:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
 }
-.sticker-list a {
-
+.shop-list a:hover::after{
+    width: 100%;
 }
-.sticker-list a img{
+/*                     STICKER*/
+.sticker-list {
+    position:relative;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
+}
+.sticker {
+    padding: 2rem;
+}
+.sticker-img{
+    
     width: 250px;
     height: 250px;
 }
+.sticker h5{
+    
+    font-size: 14px;
+}
+.sticker p {
+    font-size: 12px;
+    /*padding: 2rem;*/
+}
+/*                     FOOTER*/
 .page-footer {
     display: flex;
-    position:absolute;
+    position:relative;
     width: 100%;
     height:60px;
     bottom:0;
@@ -116,10 +141,13 @@ li, a, button {
 .mobile-menu {
     display: none;
 }
---------------------------------------FAQ
+.page {
+    padding-top: 20rem;
+}
+/*                     FAQ*/
 .faq {
-    padding: 50rem;
-    font-size: 800px;
+    padding: 5rem;
+    font-size: 8px;
     text-align: left;
     
 }
@@ -133,16 +161,14 @@ li, a, button {
     text-align: center;
     padding: 1rem;
     color:white;
-    text-align: ;
+    
 
 }
 .faq a {
     text-align: center;
     padding: 1rem;
 }
-
-
---------------------------------------CONTACT
+/*                     CONTACT*/
 .contact {
     font-size: 10px;
     color: white;
@@ -160,7 +186,7 @@ li, a, button {
     cursor:pointer;
     
 }
---------------------------------------CART
+/*                     CART*/
 .cart {
     font-size: 10px;
     color: white;
@@ -218,17 +244,26 @@ button {
     .shop-list ul li a{
         font-size: var(--smallText);
     }
-    .page{
-        padding: auto;
-    }
+
+    /*                            STICKER*/
     .sticker-list {
         display: grid;
         gap: 2rem 1rem;
+        padding-top: 1rem;
+        padding-left: 0;
+        padding-right: 0;
     }
-
-    .sticker-list a img{
-        width: 10rem;
-        height: 10rem;
+    .sticker-img {
+        width: 250px;
+        height: 250px;
+    }
+    .sticker h5{
+        padding-top: 20px;
+        font-size: 14px;
+    }
+    .sticker p {
+        padding-top: 15px;
+        font-size: 12px;
     }
 
     .footer-socials li {
