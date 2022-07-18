@@ -15,6 +15,14 @@ li, a, button {
     
     text-decoration: none;
 }
+.lorem {
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -204,7 +212,7 @@ li, a, button {
 .cart a {
     font-size: 10px;
 }
-button {
+.cart-button {
     background-color: #ffffff;
     color: #141414;
     font-size: 12px;
@@ -266,6 +274,58 @@ button {
         font-size: 12px;
     }
 
+    /*                    FAQ         */
+    .faq {
+        padding: 5rem;
+        font-size: 8px;
+        text-align: left;
+        
+    }
+    .faq h2 {
+        position: static;
+        text-align: center;
+        padding: 1rem;
+        color:white;
+    }
+    .faq p {
+        text-align: center;
+        padding: 1rem;
+        color:white;
+        
+    
+    }
+    .faq a {
+        text-align: center;
+        padding: 1rem;
+    }
+    /*                        cart */
+    .cart {
+        padding-top: 100px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .cart p {
+        padding-top: 50px;
+        padding-bottom: 30px;
+        font-size:10px
+    }
+    .cart a {
+        font-size: 10px;
+    }
+    .cart-button {
+        background-color: #ffffff;
+        color: #141414;
+        font-size: 12px;
+        border: none;
+        padding: 15px 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        margin: 4px 2px;
+        border-radius: 5px;
+        
+    }
+    /*                         footer    */
     .footer-socials li {
         display: inline-block;
         list-style: none;
