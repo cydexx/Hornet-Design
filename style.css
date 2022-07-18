@@ -1,0 +1,175 @@
+:root {
+    --smallText: 0.5em;
+}
+*{
+    background: #141414;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0;
+    font-family: 'Press Start 2P', cursive;
+}
+li, a, button {
+    color: rgb(232, 232, 232);
+    
+    text-decoration: none;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    margin-top: 2rem;
+    position: absolute;
+    width: 100%;
+    
+}
+
+.logo {
+    display: block;
+    width: 150px;
+    height: 100px;
+}
+.nav-links {
+    display: flex;
+}
+.nav-links a {
+    display: inline-block;
+    padding: 0 2rem;
+} 
+.nav-links a:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #ffffff;
+    display: block;
+    margin: auto;
+    transition: 0.7s;
+}
+.nav-links a:hover::after{
+    width: 100%;
+}
+.nav-socials {
+    color: white;
+}
+.nav-socials li {
+    display: inline-block;
+    padding: 5px 5px;
+}
+.nav-socials li a:hover{
+    opacity: 0.7;
+}
+.nav-cart li{
+    display: inline-block;
+}
+.nav-cart li a:hover{
+    opacity: 0.7;
+}
+
+.shop-title {
+    color: white;
+    text-align: center;
+    padding-top: 10rem;
+    padding-bottom: 2rem;
+    font-size: 10px;
+    
+}
+.shop-list {
+   text-align: center;
+}
+.shop-list ul li{
+    align-items: center;
+    padding-top: 2rem;
+    padding: 0px 20px;
+    display: inline-block;
+}
+.shop-list ul li a{
+    font-size: 15px;
+}
+.shop-list ul li a:hover{
+    opacity: 0.7;
+}
+.sticker-list a {
+
+}
+.sticker-list a img{
+    width: 250px;
+    height: 250px;
+}
+.page-footer {
+    display: flex;
+    position:absolute;
+    width: 100%;
+    height:60px;
+    bottom:0;
+}
+.footer-socials {
+    display: flex;
+}
+.footer-socials li {
+    display: inline-block;
+    padding: 5px 25px;
+    list-style: none;
+    position: relative;
+}
+.mobile-menu {
+    display: none;
+}
+@media screen and (max-width: 992px) {
+    .mobile-menu {
+        display: flex;
+    }
+    
+    .navbar {
+        height: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .logo {
+        width: 100px;
+        height: 75px;
+    }
+    .nav-center {
+        display: flex;
+        align-items: center;
+        padding-left: 0rem;
+    }
+    .nav-header {
+        padding: 0;
+        margin-right: 2rem;
+        height: auto;
+    }
+    .shop-list ul li a{
+        font-size: var(--smallText);
+    }
+    .page{
+        padding: auto;
+    }
+    .sticker-list {
+        display: grid;
+        gap: 2rem 1rem;
+    }
+
+    .sticker-list a img{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .footer-socials li {
+        display: inline-block;
+        list-style: none;
+        padding: 1rem 1rem 0px 1rem;
+        align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-links {
+        display: none;
+    }
+    .nav-socials {
+        display: none;
+    }
+}
