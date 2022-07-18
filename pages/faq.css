@@ -84,6 +84,12 @@ footer {
 .faq h2 {
     padding-top: 30px;
 }
+.faq a {
+    font-size: 10px;
+    
+}
+
+
 .logo {
     list-style: none;
     

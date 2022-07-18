@@ -116,6 +116,75 @@ li, a, button {
 .mobile-menu {
     display: none;
 }
+--------------------------------------FAQ
+.faq {
+    font-size: 8px;
+    color: white;
+    text-align: left;
+    
+    padding-left: 300px;
+    padding-right: 300px;
+    padding-top: 100px;
+}
+.faq p {
+    padding-top: 20px;
+}
+.faq h2 {
+    padding-top: 30px;
+}
+.faq a {
+    font-size: 10px;
+    
+}
+--------------------------------------CONTACT
+.contact {
+    font-size: 10px;
+    color: white;
+    text-align: center;
+    width: 75%;
+    cursor:pointer;
+    padding-top: 10rem;
+}
+.contact p {
+    padding-top: 40px;
+    
+}
+.contact a {
+    font-size: 11px;
+    cursor:pointer;
+    
+}
+--------------------------------------CART
+.cart {
+    font-size: 10px;
+    color: white;
+    text-align: left;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 50px;
+}
+.cart p {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    font-size:10px
+}
+.cart a {
+    font-size: 10px;
+}
+button {
+    background-color: #ffffff;
+    color: #141414;
+    font-size: 12px;
+    border: none;
+    padding: 15px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 5px;
+    
+}
 @media screen and (max-width: 992px) {
     .mobile-menu {
         display: flex;
