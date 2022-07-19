@@ -1,345 +1,127 @@
 :root {
-    --smallText: 0.5em;
+  --color-main: #e84242;
+  --color-black: #1b1b1b;
+  --border: 0.1rem solid rgba(255, 255, 255, 0, 0.4);
+  --smallText: 0.5em;
 }
-*{
-    background: #141414;
-    list-style: none;
-    text-decoration: none;
-    box-sizing: border-box;
-    margin: auto;
-    padding: 0;
-    font-family: 'Press Start 2P', cursive;
+* {
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s ease;
 }
-li, a, button {
-    color: rgb(232, 232, 232);
-    
-    text-decoration: none;
+/*                           BASE HTML CODES*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scrollbar-color: smooth;
 }
-.lorem {
-    color: white;
-    padding-left: 50px;
-    padding-right: 50px;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
+body {
+  background-color: var(--color-main);
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: #ffffff;
-    margin-top: 2rem;
-    position: relative;
-    width: 100%;
-    
+section {
+    padding: 3.5rem 7%;
 }
-
-.logo {
-    display: block;
-    width: 150px;
-    height: 100px;
+/*                   HEADER                */
+.header .logo img {
+  height: 10rem;
 }
-.nav-links {
-    display: flex;
+.header {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  position: sticky;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  top: 2rem;
 }
-.nav-links a {
-    display: inline-block;
-    padding: 0 2rem;
-} 
-.nav-links a:after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
+.header .navbar a {
+  margin: 0 2rem;
+  font-size: 1.6rem;
+  color: var(--color-black);
+  border-bottom: 0.2rem solid transparent;
 }
-.nav-links a:hover::after{
-    width: 100%;
+.header .navbar .active,
+.header .navbar a:hover {
+    border-color: var(--color-main);
+    padding-bottom: 0.5rem;
 }
-.nav-socials {
-    color: white;
+.header .navbar .active:hover {
+    border-bottom: 0.2rem solid transparent;
 }
-.nav-socials li {
-    display: inline-block;
-    padding: 5px 5px;
+.header .navbar-right a {
+  margin: 0 0.2rem;
+  font-size: 2rem;
+  color: var(--color-black);
+  background-color: transparent;
 }
-.nav-socials li a:hover{
+.header .navbar-right a:hover {
     opacity: 0.7;
 }
-.nav-cart li{
-    display: inline-block;
+.header .navbar-right button {
+    cursor: pointer;
+    font-size: 2rem;
+    padding-left: 1rem;
+    background-color: transparent;
 }
-.nav-cart li a:hover{
-    opacity: 0.7;
-}
-
-.shop-title {
-    color: white;
-    text-align: center;
-    padding-bottom: 3rem;
-    font-size: 12px;
-}
-.shop-list {
-   text-align: center;
-}
-.shop-list ul li{
+/*                   HOME                */
+.home { 
+    min-height: 100vh;
+    background: url(/images/background.png)
+    no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-top:-14.5rem;
+    display: flex;
     align-items: center;
-    padding-top: 2rem;
-    padding: 0px 20px;
-    display: inline-block;
 }
-.shop-list ul li a{
-    font-size: 15px;
+.home .content {
+    max-width: 60rem;
 }
-.shop-list ul li a:after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #ffffff;
-    display: block;
-    margin: auto;
-    transition: 0.7s;
+.home .content h3{
+    font-size: 6rem;
+    color: var(--color-black);
 }
-.shop-list a:hover::after{
-    width: 100%;
+.home .content p{
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: var(--color-black);
 }
-/*                     STICKER*/
-.sticker-list {
-    position:relative;
-    padding-top: 5rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
-    
+/*                   FOOTER                */
+.footer {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 7%;
+  margin: 2rem 7%;
+  position: sticky;
+  border-radius: 30rem;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  bottom: 2rem;
 }
-.sticker {
-    padding: 2rem;
+.footer .footer-socials a {
+  margin: 0 2rem;
+  font-size: 1.6rem;
+  color: var(--color-black);
 }
-.sticker-img{
-    
-    width: 250px;
-    height: 250px;
-}
-.sticker h5{
-    
-    font-size: 14px;
-}
-.sticker p {
-    font-size: 12px;
-    /*padding: 2rem;*/
-}
-/*                     FOOTER*/
-.page-footer {
-    display: flex;
-    position:relative;
-    width: 100%;
-    height:60px;
-    bottom:0;
-}
-.footer-socials {
-    display: flex;
-}
-.footer-socials li {
-    display: inline-block;
-    padding: 5px 25px;
-    list-style: none;
-    position: relative;
-}
-.mobile-menu {
-    display: none;
-}
-.page {
-    padding-top: 20rem;
-}
-/*                     FAQ*/
-.faq {
-    padding: 5rem;
-    font-size: 8px;
-    text-align: left;
-    
-}
-.faq h2 {
-    position: static;
-    text-align: center;
-    padding: 1rem;
-    color:white;
-}
-.faq p {
-    text-align: center;
-    padding: 1rem;
-    color:white;
-    
 
-}
-.faq a {
-    text-align: center;
-    padding: 1rem;
-}
-/*                     CONTACT*/
-.contact {
-    font-size: 10px;
-    color: white;
-    text-align: center;
-    width: 75%;
-    cursor:pointer;
-    padding-top: 10rem;
-}
-.contact p {
-    padding-top: 40px;
-    
-}
-.contact a {
-    font-size: 11px;
-    cursor:pointer;
-    
-}
-/*                     CART*/
-.cart {
-    font-size: 10px;
-    color: white;
-    text-align: left;
-    padding-left: 200px;
-    padding-right: 200px;
-    padding-top: 50px;
-}
-.cart p {
-    padding-top: 50px;
-    padding-bottom: 30px;
-    padding-left: 15px;
-    font-size:10px
-}
-.cart a {
-    font-size: 10px;
-}
-.cart-button {
-    background-color: #ffffff;
-    color: #141414;
-    font-size: 12px;
-    border: none;
-    padding: 15px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    border-radius: 5px;
-    
-}
 @media screen and (max-width: 992px) {
-    .mobile-menu {
-        display: flex;
-    }
-    
-    .navbar {
-        height: 5rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-    .logo {
-        width: 100px;
-        height: 75px;
-    }
-    .nav-center {
-        display: flex;
-        align-items: center;
-        padding-left: 0rem;
-    }
-    .nav-header {
-        padding: 0;
-        margin-right: 2rem;
-        height: auto;
-    }
-    .shop-list ul li a{
-        font-size: var(--smallText);
-    }
 
-    /*                            STICKER*/
-    .sticker-list {
-        display: grid;
-        gap: 2rem 1rem;
-        padding-top: 1rem;
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .sticker-img {
-        width: 250px;
-        height: 250px;
-    }
-    .sticker h5{
-        padding-top: 20px;
-        font-size: 14px;
-    }
-    .sticker p {
-        padding-top: 15px;
-        font-size: 12px;
-    }
-
-    /*                    FAQ         */
-    .faq {
-        padding: 5rem;
-        font-size: 8px;
-        text-align: left;
-        
-    }
-    .faq h2 {
-        position: static;
-        text-align: center;
-        padding: 1rem;
-        color:white;
-    }
-    .faq p {
-        text-align: center;
-        padding: 1rem;
-        color:white;
-        
-    
-    }
-    .faq a {
-        text-align: center;
-        padding: 1rem;
-    }
-    /*                        cart */
-    .cart {
-        padding-top: 100px;
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    .cart p {
-        padding-top: 50px;
-        padding-bottom: 30px;
-        font-size:10px
-    }
-    .cart a {
-        font-size: 10px;
-    }
-    .cart-button {
-        background-color: #ffffff;
-        color: #141414;
-        font-size: 12px;
-        border: none;
-        padding: 15px 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        margin: 4px 2px;
-        border-radius: 5px;
-        
-    }
-    /*                         footer    */
-    .footer-socials li {
-        display: inline-block;
-        list-style: none;
-        padding: 1rem 1rem 0px 1rem;
-        align-items: center;
-        justify-content: space-between;
-        align-items: center;
-        position: relative;
-    }
-
-    .nav-links {
+    .header .navbar a, .header .navbar-right button, .header .navbar-right a{
         display: none;
     }
-    .nav-socials {
-        display: none;
-    }
+
 }
