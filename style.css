@@ -231,5 +231,16 @@ section {
     .header .navbar a, .header .navbar-buttons button, .header .navbar-socials a{
         display: none;
     }
+    .mobile-menu {
+      display: flex;
+    }
+    .mobile-menu button{
+      display: flex;
+      cursor: pointer;
+      font-size: 2rem;
+      padding-left: 1rem;
+      background-color: transparent;
+    }
+
 
 }
