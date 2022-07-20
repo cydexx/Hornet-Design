@@ -132,22 +132,34 @@ section {
   padding: 3rem;
   background-color: #fff;
   border-radius: 3rem;
-  min-height: 60rem;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
 }
 .menu .box-container .box img {
   width: 100%;
   object-fit: cover;
+  border-radius: 2rem;
+  padding-bottom: 1rem;
 }
 .menu .box-container .box .menu-category {
-  font-size: 1.2rem;
+  font-size: 1rem;
+  color: var(--color-main);
 }
 .menu .box-container .box h3{
-  font-size: 3rem;
-  padding: 1rem 0;
+  font-size: 2rem;
+  padding-top: 1.5rem;
+  padding-bottom: 0.5rem;
+ }
+ .menu .box-container .box .price{
+  font-size: 1rem;
+  padding: 0.5rem 0;
+ }
+ .menu .box-container .box .price span{
+  text-decoration: line-through;
  }
 /*                   FOOTER                */
 .footer {
