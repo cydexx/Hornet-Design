@@ -1,3 +1,24 @@
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0.5rem 1rem 2rem var(--color-black); 
+  border-radius: 10px;
+  
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-black); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #282727; 
+}
 :root {
   --color-main: #e84242;
   --color-black: #1b1b1b;
@@ -173,7 +194,7 @@ section {
   padding: 3rem;
   background-color: #fff;
   border-radius: 3rem;
-  min-height: 50rem;
+  min-height: 45rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -201,6 +222,7 @@ section {
  }
  .menu .box-container .box .price span{
   text-decoration: line-through;
+  font-size: 0.7rem;
  }
  .menu .box-container .box .btn {
   font-size: 1rem;
@@ -226,7 +248,7 @@ section {
   color: var(--color-black);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 999px) {
 
     .header .navbar a, .header .navbar-buttons button, .header .navbar-socials a{
         display: none;
