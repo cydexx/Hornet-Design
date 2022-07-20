@@ -22,7 +22,7 @@
 :root {
   --color-main: #e84242;
   --color-black: #1b1b1b;
-  --border: 0.1rem solid rgba(255, 255, 255, 0, 0.4);
+  --border: 0.1rem solid rgba(255, 100, 255, 0, 0.9);
   --smallText: 0.5em;
 }
 * {
@@ -53,6 +53,21 @@ body {
 section {
     padding: 3.5rem 7%;
 }
+.heading {
+  font-size: 2rem;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 2rem ;
+    text-shadow: 2px 2px var(--color-black);
+  .menu h1 span{
+    color: var(--color-black);
+    text-shadow: 2px 2px #fff;
+  }
+}
+.heading span{
+    color: var(--color-black);
+    text-shadow: 2px 2px #fff;
+}
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -64,8 +79,14 @@ section {
   box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
 }
 .btn:hover {
-  opacity: 0.9;
   text-shadow: 1px 1px #fff;
+}
+.search-input {
+  font-size: 1.6rem;
+  color: var(--color-black);
+  padding: 1rem;
+  text-transform: none;
+  border-radius: 3rem;
 }
 /*                   HEADER                */
 .header .logo img {
@@ -159,17 +180,6 @@ section {
 .menu {
   padding-top: 0;
 }
-.menu h1 {
-  font-size: 2rem;
-  color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 2rem ;
-  text-shadow: 2px 2px var(--color-black);
-}
-.menu h1 span{
-  color: var(--color-black);
-  text-shadow: 2px 2px #fff;
-}
 .menu .design-navs {
   display: flex;
   padding-bottom: 3rem;
@@ -182,6 +192,7 @@ section {
 }
 .menu .design-navs .design-nav a:hover{
   text-shadow: 1px 1px var(--color-black);
+
 }
 
 
@@ -258,21 +269,60 @@ section {
  }
 /*                   FOOTER                */
 .footer {
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 7%;
-  margin: 2rem 7%;
-  position: sticky;
-  border-radius: 30rem;
-  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
-  bottom: 2rem;
+  background-color: var(--color-black);
+  text-align: center;
+  border-radius: 1.50rem;
 }
-.footer .footer-socials a {
-  margin: 0 2rem;
-  font-size: 1.6rem;
-  color: var(--color-black);
+.footer .search {
+  display: flex;
+  justify-content: center;
+}
+.footer .search .search-input {
+  width: 20rem;
+  height: 3rem;
+  box-shadow: 0px 0px 17px -2px #fff;
+}
+.footer .search .btn{
+  margin-top: 0;
+  margin-left: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--color-main);
+  box-shadow: 0px 0px 17px -2px var(--color-main);
+}
+
+.footer .footer-socials a{
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: #fff;
+  font-size: 2rem;
+  border: var(--border);
+  border-radius: 100%;
+  margin: 0.3;
+  padding: 1rem;
+}
+.footer .footer-socials a:hover{
+background-color: var(--color-main);
+}
+.footer .credit {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 1.5rem;
+}
+.footer .credit span{
+  color: var(--color-main);
+  font-weight: 700;
+  text-shadow: 1px 1px var(--color-main);
+}
+.footer .credit p{
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  padding-top: 1.5rem;
 }
 
 @media screen and (max-width: 999px) {
