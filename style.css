@@ -150,8 +150,8 @@ section {
   color: var(--color-main);
 }
 .menu .box-container .box h3{
-  font-size: 2rem;
-  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  padding-top: 1.2rem;
   padding-bottom: 0.5rem;
  }
  .menu .box-container .box .price{
@@ -160,6 +160,11 @@ section {
  }
  .menu .box-container .box .price span{
   text-decoration: line-through;
+ }
+ .menu .box-container .box .btn {
+  font-size: 1rem;
+  padding: 1.5rem 2rem;
+
  }
 /*                   FOOTER                */
 .footer {
