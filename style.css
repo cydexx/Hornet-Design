@@ -313,7 +313,7 @@ background-color: var(--color-main);
   font-weight: 400;
   padding-top: 1.5rem;
 }
-.footer .credit span{
+.footer .credit a{
   color: var(--color-main);
   font-weight: 700;
   text-shadow: 1px 1px var(--color-main);
