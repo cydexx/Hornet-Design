@@ -93,7 +93,7 @@ section {
 }
 /*                   HOME                */
 .home { 
-    min-height: 100vh;
+    min-height: 102vh;
     background: url(/images/background.png)
     no-repeat;
     background-size: cover;
