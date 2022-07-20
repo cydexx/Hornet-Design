@@ -1,5 +1,5 @@
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 1rem;
 }
 
 /* Track */
@@ -37,6 +37,10 @@
   transition: 0.2s ease;
 }
 /*                           BASE HTML CODES*/
+a {
+  color: var(--color-black);
+  text-decoration: none;
+}
 html {
   font-size: 62.5%;
   overflow-x: hidden;
@@ -58,6 +62,10 @@ section {
   color: #fff;
   background-color: var(--color-black);
   box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+}
+.btn:hover {
+  opacity: 0.9;
+  text-shadow: 1px 1px #fff;
 }
 /*                   HEADER                */
 .header .logo img {
@@ -162,17 +170,18 @@ section {
   color: var(--color-black);
   text-shadow: 2px 2px #fff;
 }
-.menu .design {
-  padding-top: 1rem;
-}
 .menu .design-navs {
   display: flex;
   padding-bottom: 3rem;
   align-items: center;
   justify-content: center;
+  border-bottom: 0.1rem solid var(--color-black);
 }
 .menu .design-navs .design-nav{
   padding: 1rem;
+}
+.menu .design-navs .design-nav a:hover{
+  text-shadow: 1px 1px var(--color-black);
 }
 
 
@@ -189,6 +198,7 @@ section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
+  padding-top: 2rem;
 }
 .menu .box-container .box {
   padding: 3rem;
@@ -210,18 +220,35 @@ section {
 .menu .box-container .box .menu-category {
   font-size: 1rem;
   color: var(--color-main);
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: 900;
 }
 .menu .box-container .box h3{
   font-size: 1.5rem;
   padding-top: 1.2rem;
   padding-bottom: 0.5rem;
  }
+ .menu .box-container .box .menu-category{
+  font-size: 1rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2rem;
+  font-weight: 900;
+ }
+.menu .box-container .box .product-title{
+  font-size: 1.5rem;
+  padding-bottom: 0.5rem;
+  padding-top: 1.2rem;
+  font-weight: 900;
+ }
  .menu .box-container .box .price{
   font-size: 1rem;
   padding: 0.5rem 0;
+  font-weight: 500;
  }
  .menu .box-container .box .price span{
   text-decoration: line-through;
+  font-weight: 300;
   font-size: 0.7rem;
  }
  .menu .box-container .box .btn {
