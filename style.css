@@ -78,8 +78,12 @@ section {
   background-color: var(--color-black);
   box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
 }
-.btn:hover, .btn:active {
+.btn:hover {
   text-shadow: 1px 1px #fff;
+}
+.btn:active {
+  background-color: var(--color-main);
+  color: #fff;
 }
 .search-input {
   font-size: 1.6rem;
@@ -89,28 +93,7 @@ section {
   border-radius: 3rem;
 }
 /*                   HEADER                */
-.searh-form {
-  position: fixed;
-  top: 50%;
-  right: 7%;
-  background-color: #fff;
-  width: 1rem;
-  height: 1rem;
-  display: none;
-  align-items: center;
-  border-radius: 3rem ;
-}
-.header .search-form {
-  position: fixed;
-  top: 50%;
-  right: 7%;
-  background-color: #fff;
-  width: 1rem;
-  height: 1rem;
-  display: none;
-  align-items: center;
-  border-radius: 3rem ;
-}
+
 #menu-btn {
   display: none;
 }
@@ -119,6 +102,9 @@ section {
 }
 .header .logo {
   padding: 0.5rem;
+  margin:0 auto;
+  width: 100px;
+
 }
 .header {
   background-color: #fff;
@@ -187,7 +173,7 @@ display: none;
     display: inline-block;
     padding: 2rem 3.75rem;
     border-radius: 3rem;
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+    box-shadow: -0.7rem 0.5rem var(--color-black);
 
 }
 .home .content h3{
@@ -215,13 +201,18 @@ display: none;
   align-items: center;
   justify-content: center;
   border-bottom: 0.1rem solid var(--color-black);
+  
 }
 .menu .design-navs .design-nav{
   padding: 1rem;
 }
 .menu .design-navs .design-nav a:hover{
   text-shadow: 1px 1px var(--color-black);
-
+  transform: translateY(-0.2rem);
+}
+.menu .design-navs .design-nav a:active{
+  background-color: var(--color-main);
+  color: #fff;
 }
 
 
@@ -233,6 +224,7 @@ display: none;
   padding: 1rem 1rem;
   border-radius: 2rem;
   font-size: 1rem;
+  box-shadow: -0.3rem 0.3rem var(--color-black);
 }
 .menu .box-container{
   display: grid;
@@ -326,8 +318,7 @@ display: none;
   box-shadow: 0px 0px 17px -2px var(--color-main);
 }
 .footer .footer-socials{
-  border-color: #fff;
-  border-radius: 100%;
+  padding-bottom: 2rem;
 }
 .footer .footer-socials a{
   width: 5rem;
@@ -340,9 +331,11 @@ display: none;
   border-radius: 100%;
   margin: 0.3;
   padding: 1rem;
+  box-shadow: 0px 0px 10px 2px var(--color-main);
+  
 }
 .footer .footer-socials a:hover{
-background-color: var(--color-main);
+  background-color: var(--color-main);
 }
 .footer .credit {
   font-size: 1rem;
