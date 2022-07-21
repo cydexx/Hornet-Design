@@ -429,6 +429,9 @@ display: none;
 }
 
 @media screen and (max-width: 991px) {
+  .home {
+    margin-top:-15rem;
+  }
   .header .navbar-socials a{
     display: none;
   }
