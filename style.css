@@ -181,10 +181,14 @@ display: none;
     display: inline-block;
     padding: 2rem 3.75rem;
     border-radius: 3rem;
-    box-shadow: -0.7rem 0.5rem var(--color-black);
+    box-shadow: -0.4rem 0.3rem var(--color-black);
     border: 2px solid var(--color-black);
     border-style: dashed;
     border-color: var(--color-black);
+}
+.home .content:hover {
+  box-shadow: -0.7rem 0.5rem var(--color-black);
+  transform: translateY(-1rem);
 }
 .home .faq{ 
   max-width: 150rem;
@@ -308,19 +312,20 @@ display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: space-between;
-  box-shadow: -0.7rem 0.5rem var(--color-black);
+  box-shadow: -0.4rem 0.3rem var(--color-black);
   border: 1px solid var(--color-black);
   border-style: dashed;
 }
 .menu .box-container .box:hover {
   transform: translateY(-1rem);
+  box-shadow: -0.7rem 0.5rem var(--color-black);
 }
 .menu .box-container .box:hover img {
   transform: scale(1.1);
 }
 .menu .box-container .box:hover .box-middle .product-title,
 .menu .box-container .box:hover .box-middle .menu-category,
-.menu .box-container .box:hover .price {
+.menu .box-container .box:hover .price{
   transform: translateY(-1rem);
 }
 .menu .box-container .box img {
@@ -486,5 +491,17 @@ display: none;
 
 
 }
+@media screen and (max-width: 700) {
 
+  html {
+    font-size:40%;
+}
 
+}
+@media screen and (max-width: 500) {
+
+  html {
+    font-size:20%;
+}
+
+}
