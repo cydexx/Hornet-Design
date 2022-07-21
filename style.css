@@ -161,12 +161,12 @@ display: none;
 }
 /*                   HOME                */
 .home {
-    min-height: 102vh;
+    min-height: 100vh;
     background-color: #ad2c2c;
     background-image: url(/images/background.png);
     background-size: cover;
     background-position: center;
-    margin-top:-14.5rem;
+    margin-top:-13rem;
     display: flex;
     align-items: center;
     border-bottom: 0.2rem dashed var(--color-black);
