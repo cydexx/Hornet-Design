@@ -297,6 +297,7 @@ display: none;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
   border: 0.2rem dashed var(--color-black);
+  border-radius: 2rem;
 }
 .menu .box-container .box {
   padding: 2rem;
