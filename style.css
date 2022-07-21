@@ -63,12 +63,12 @@ section {
   padding-bottom: 2rem ;
   text-shadow: 2px 2px var(--color-black);
   color: var(--color-black);
-  text-shadow: -2px 2px #fff;
+  text-shadow: -1.5px 1.5px #fff;
 }
 .heading span{
   font-size: 2rem;
   color: #fff;
-  text-shadow: -2px 2px var(--color-black);
+  text-shadow: -3px 3px var(--color-black);
 }
 .btn {
   margin-top: 1rem;
@@ -183,7 +183,7 @@ display: none;
     border-color: var(--color-black);
 }
 .home .faq{ 
-  max-width: 100rem;
+  max-width: 150rem;
   background-color: var(--color-main);
   display: inline-block;
   padding: 2rem 3.75rem;
@@ -194,16 +194,17 @@ display: none;
   border-color: var(--color-black);
 }
 .home .faq h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 .home .faq p {
-  font-size: 1rem;
+  font-size: 1.3rem;
   padding: 1rem 0;
+  text-shadow: 1px 1px var(--color-black);
 }
 .home .faq a {
   color: #fff;
   text-shadow: 2px 2px var(--color-black);
-
+  text-decoration: underline;
 }
 .home.home-contact { 
   min-height: 72.8vh;
@@ -221,10 +222,10 @@ display: none;
   border-color: var(--color-black);
 }
 .home .contact h3 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .home .contact p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 1rem 0;
   text-shadow: 1px 1px var(--color-black);
 }
