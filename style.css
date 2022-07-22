@@ -66,10 +66,12 @@ section {
   text-shadow: 2px 2px var(--color-black);
   color: var(--color-black);
   text-shadow: -1.5px 1.5px #fff;
+  
 }
 .heading span{
   font-size: 2rem;
   color: #fff;
+  box-shadow: -0.1rem 0.1rem var(--color-black);
   text-shadow: -3px 3px var(--color-black);
 }
 .btn {
@@ -80,7 +82,7 @@ section {
   font-size: 1.7rem;
   color: #fff;
   background-color: var(--color-black);
-  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  box-shadow:  0px 0px 15px 1px rgba(0,0,0,0.49);
 }
 .btn:hover {
   text-shadow: 1px 1px #fff;
@@ -121,6 +123,7 @@ section {
   /*box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);*/
   box-shadow: -0.7rem 0.9rem var(--color-black);
   top: 2rem;
+  border: 0.2rem dashed var(--color-black);
 }
 
 .header .navbar a {
@@ -264,16 +267,17 @@ display: none;
 /*                   MENU                */
 .menu {
   padding-top: 0;
-  border-bottom: 0.2rem dashed var(--color-black);
+}
+.menu .heading span{
+  border: 0.2rem dashed var(--color-black);
+  border-radius: 1rem;
 }
 .menu .design-navs {
   display: flex;
   padding-bottom: 3rem;
   align-items: center;
   justify-content: center;
-}
-.menu .design-navs .design-nav{
-  padding: 1rem;
+  gap:1rem;
 }
 .menu .design-navs .design-nav a:hover{
   text-shadow: 1px 1px var(--color-black);
@@ -301,7 +305,7 @@ display: none;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
   border: 0.2rem dashed var(--color-black);
-  border-radius: 2rem;
+  border-radius: 3rem;
 }
 .menu .box-container .box {
   padding: 2rem;
@@ -313,15 +317,17 @@ display: none;
   align-items: flex-start;
   justify-content: space-between;
   box-shadow: -0.4rem 0.3rem var(--color-black);
-  border: 1px solid var(--color-black);
-  border-style: dashed;
+  border: 1px dashed var(--color-black);
 }
+
 .menu .box-container .box:hover {
   transform: translateY(-1rem);
   box-shadow: -0.7rem 0.5rem var(--color-black);
 }
 .menu .box-container .box:hover img {
   transform: scale(1.1);
+  box-shadow: -0.4rem 0.3rem var(--color-black);
+  border: 1px dashed var(--color-black);
 }
 .menu .box-container .box:hover .box-middle .product-title,
 .menu .box-container .box:hover .box-middle .menu-category,
@@ -331,8 +337,9 @@ display: none;
 .menu .box-container .box img {
   width: 100%;
   object-fit: cover;
-  border-radius: 3rem;
+  border-radius: 2rem;
   margin-bottom: 2rem;
+  box-shadow:  0px 0px 15px 1px rgba(0,0,0,0.10);
 }
 .menu .box-container .box .box-middle {
   display: grid;
@@ -362,13 +369,14 @@ display: none;
  .menu .box-container .box .btn {
   font-size: 1rem;
   padding: 1.5rem 2rem;
-
+  border: 1px dashed #fff;
  }
 /*                   FOOTER                */
 .footer {
   background-color: var(--color-black);
   text-align: center;
   border-radius: 1.50rem;
+  border: 0.2rem dashed var(--color-main);
 }
 .footer .search {
   display: flex;
