@@ -331,7 +331,8 @@ display: none;
 }
 .menu .box-container .box:hover .box-middle .product-title,
 .menu .box-container .box:hover .box-middle .menu-category,
-.menu .box-container .box:hover .price{
+.menu .box-container .box:hover .price,
+.menu .box-container .box:hover .btn{
   transform: translateY(-1rem);
 }
 .menu .box-container .box img {
@@ -354,7 +355,6 @@ display: none;
 .menu .box-container .box .box-middle .product-title{
   font-size: 1.5rem;
   font-weight: 900;
-  cursor: pointer;
  }
  .menu .box-container .box .price{
   font-size: 1rem;
