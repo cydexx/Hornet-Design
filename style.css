@@ -23,7 +23,8 @@
   background: #282727; 
 }
 :root {
-  --color-main: #e84242;
+  --color-main: #cb3838;
+  --color-light:  #e94f4f;
   --color-black: #1b1b1b;
   --border: 0.1rem solid rgba(255, 100, 255, 0, 0.9);
   --smallText: 0.5em;
@@ -38,6 +39,7 @@
   border: none;
   text-decoration: none;
   transition: 0.3s ease;
+  user-select: none
 }
 /*                           BASE HTML CODES*/
 img {
@@ -269,7 +271,7 @@ display: none;
   padding-top: 0;
 }
 .menu .heading span{
-  border: 0.2rem dashed var(--color-black);
+  border: 0.2rem dashed var(--color-light);
   border-radius: 1rem;
 }
 .menu .design-navs {
@@ -297,13 +299,13 @@ display: none;
   border-radius: 2rem;
   font-size: 1rem;
   box-shadow: -0.3rem 0.3rem var(--color-black);
-  border: 1px dashed var(--color-black);
+  border: 1px dashed var(--color-light);
 }
 .menu .box-container{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 2rem;
-  border: 0.2rem dashed var(--color-black);
+  border: 0.2rem dashed var(--color-light);
   border-radius: 3rem;
 }
 .menu .box-container .box {
