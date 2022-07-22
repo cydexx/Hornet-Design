@@ -37,7 +37,7 @@
   outline: none;
   border: none;
   text-decoration: none;
-  transition: 0.2s ease;
+  transition: 0.3s ease;
 }
 /*                           BASE HTML CODES*/
 img {
@@ -223,7 +223,7 @@ display: none;
 }
 .home .contact{ 
   max-width: 150rem;
-  background-color: var(--color-main);/*  kutuyu kaldırmak için 3 satır sil */
+  background-color: var(--color-main);
   display: inline-block;
   padding: 2rem 3.75rem;
   border-radius: 3rem;
@@ -411,10 +411,15 @@ display: none;
   margin: 0.3;
   padding: 1rem;
   box-shadow: 0px 0px 10px 2px var(--color-main);
-  
+  transition: 0.001s;
 }
-.footer .footer-socials a:hover{
+.footer .footer-socials a:hover,
+.footer .footer-socials a:hover i,
+.footer .footer-socials a:hover .nav-social
+{
   background-color: var(--color-main);
+  transform: scale(1.4) rotate(180deg);
+  transition: 0.8s;
 }
 .footer .credit {
   font-size: 1rem;
@@ -426,11 +431,18 @@ display: none;
   color: #fff;
   font-weight: 700;
   text-shadow: 1px 1px var(--color-main);
+  display: inline-block;
 }
-.footer .credit a:hover{
+.footer .credit a:hover {
   color: var(--color-main);
   font-size: 1.2rem;
   text-shadow: 1px 1px #fff;
+
+}
+.footer:hover a,
+.footer:hover .footer-socials a .nav-social{
+  transform: scale(1.2)rotate(360deg);
+  transition: 0.8s;
 }
 .footer .credit p{
   font-size: 1rem;
