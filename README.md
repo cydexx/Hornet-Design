@@ -1,6 +1,6 @@
 ![hornet logo](images/hornet.png)
 
-[![hornetdesign](https://hornetdesign.netlify.app/)
+[hornetdesign](https://hornetdesign.netlify.app/)
 
 `hornetdesign` is my first website attempt. thats all
 
