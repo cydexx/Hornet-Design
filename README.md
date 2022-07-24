@@ -1,4 +1,4 @@
-![stronghold logo](img/stronghold-logo-left.png)
+![hornet logo](images/hornet.png)
 
 [![Downloads](http://pepy.tech/badge/stronghold)](http://pepy.tech/count/stronghold)
 
