@@ -1,6 +1,6 @@
 ![hornet logo](images/hornet.png)
 
-[![Downloads](http://pepy.tech/badge/stronghold)](http://pepy.tech/count/stronghold)
+[![hornetdesign](https://hornetdesign.netlify.app/)
 
 `hornetdesign` is my first website attempt. thats all
 
