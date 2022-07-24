@@ -366,11 +366,19 @@ display: none;
  }
  .menu .box-container .box .box-middle .product-tags li{
   display: inline-block;
+ }
+ .menu .box-container .box .box-middle .product-tags li a{
+  font-size: 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: bold;
+  color: var(--color-main);
+ }
+ .menu .box-container .box:hover .box-middle .product-tags li{
   box-shadow: -0.1rem 0.1rem 0.1rem 0.3rem var(--color-light);
   border-radius: 0.1rem;
   border: 1px dashed var(--color-light);
  }
-.menu .box-container .box .box-middle .product-tags li a{
+.menu .box-container .box:hover .box-middle .product-tags li a{
   font-size: 1rem;
   padding-bottom: 0.5rem;
   font-weight: bold;
