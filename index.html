@@ -251,22 +251,5 @@
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="app.js"></script>
-    <script>
-      window.onload = function() {
-          var labels = document.getElementsByTagName('label');
-          for (var i = 0; i < labels.length; i++) {
-              disableSelection(labels[i]);
-          }
-      };
-      function disableSelection(element) {
-          if (typeof element.onselectstart != 'undefined') {
-              element.onselectstart = function() { return false; };
-          } else if (typeof element.style.MozUserSelect != 'undefined') {
-              element.style.MozUserSelect = 'none';
-          } else {
-              element.onmousedown = function() { return false; };
-          }
-      }
-  </script>
   </body>
 </html>

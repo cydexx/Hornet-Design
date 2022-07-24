@@ -135,6 +135,7 @@ section {
   box-shadow: -0.7rem 0.9rem var(--color-black);
   top: 2rem;
   border: 0.2rem dashed var(--color-black);
+  /*z-index: 1;   box container hover olunca headerın üstüne gelmesini engeller. */
 }
 
 .header .navbar a {
@@ -320,6 +321,7 @@ display: none;
   gap: 2rem;
   border: 0.2rem dashed var(--color-light);
   border-radius: 3rem;
+  
 }
 .menu .box-container .box {
   padding: 2rem;
