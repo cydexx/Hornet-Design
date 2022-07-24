@@ -436,8 +436,7 @@ display: none;
 .footer .footer-socials a:hover i,
 .footer .footer-socials a:hover .nav-social
 {
-  background-color: var(--color-main);
-  transform: scale(1.4) rotate(180deg);
+  transform: scale(1.4) rotate(360deg);
   transition: 0.8s;
 }
 .footer .credit {
@@ -456,12 +455,14 @@ display: none;
   color: var(--color-main);
   font-size: 1.2rem;
   text-shadow: 1px 1px #fff;
+  transform: scale(1.4) rotate(360deg);
+  transition-delay: 0s;
 
 }
-.footer:hover a,
-.footer:hover .footer-socials a .nav-social{
+.footer:hover a{
   transform: scale(1.2)rotate(360deg);
-  transition: 0.8s;
+  transition: 0.5s;
+  transition-delay: 1s;
 }
 .footer .credit p{
   font-size: 1rem;
