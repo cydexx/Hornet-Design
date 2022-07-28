@@ -186,10 +186,6 @@ display: none;
     align-items: center;
     border-bottom: 0.2rem dashed var(--color-light);
 }
-.home.home-faq { 
-  min-height: 72.8vh;
-
-}
 .home .content {
     max-width: 50%;
     min-height: 25rem;
@@ -198,77 +194,100 @@ display: none;
     padding: 2rem 3.75rem;
     border-radius: 3rem;
     box-shadow: -0.4rem 0.3rem var(--color-black);
-    border: 2px solid var(--color-black);
-    border-style: dashed;
-    border-color: var(--color-black);
+    border: 2px dashed var(--color-black);
 }
 .home .content:hover {
   box-shadow: -0.7rem 0.5rem var(--color-black);
   transform: translateY(-1rem);
 }
-.home .faq{ 
-  max-width: 150rem;
+.home-faq { 
+  border: 2px dashed var(--color-light);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 15rem;
+}
+.faq-contact-heading {
+  font-size: 4rem;
+  text-shadow: -2px 2px #fff;
+  padding-left: 1rem;
+}
+.home-faq .faq{ 
+  max-width: 85%;
   background-color: var(--color-main);
   display: inline-block;
   padding: 2rem 3.75rem;
   border-radius: 3rem;
-  box-shadow: -0.7rem 0.5rem var(--color-black);
+  box-shadow: -0.5rem 0.5rem var(--color-black);
   border: 2px solid var(--color-black);
   border-style: dashed;
   border-color: var(--color-black);
+  
 }
-.home .faq h3 {
+#faq:hover { 
+  transform: translateY(-1rem);
+  box-shadow: -0.5rem 0.5rem var(--color-light);
+
+}
+.home-faq .faq h3 {
   font-size: 1.6rem;
+  text-shadow: -1px 1px var(--color-white);
 }
-.home .faq p {
+.home-faq .faq p {
   font-size: 1.3rem;
   padding: 1rem 0;
   text-shadow: 1px 1px var(--color-black);
 }
-.home .faq a {
+.home-faq .faq a {
   color: #fff;
   text-shadow: 2px 2px var(--color-black);
   text-decoration: underline;
 }
-.home.home-contact { 
-  min-height: 72.8vh;
+.home-contact { 
+  border: 2px dashed var(--color-light);
+  border-radius: 2rem;
+  padding: 0.5rem;
+  margin-bottom: 15rem;
+}
+#contact:hover { 
+  transform: translateY(-1rem);
+  box-shadow: -0.5rem 0.5rem var(--color-light);
 
 }
-.home .contact{ 
-  max-width: 150rem;
+.home-contact .contact{ 
+  max-width: 85%;
   background-color: var(--color-main);
   display: inline-block;
   padding: 2rem 3.75rem;
   border-radius: 3rem;
-  box-shadow: -0.7rem 0.5rem var(--color-black);
+  box-shadow: -0.5rem 0.5rem var(--color-black);
   border: 2px solid var(--color-black);
   border-style: dashed;
   border-color: var(--color-black);
 }
-.home .contact h3 {
+.home-contact .contact h3 {
   font-size: 1.6rem;
 }
-.home .contact p {
+.home-contact .contact p {
   font-size: 1.3rem;
   padding: 1rem 0;
   text-shadow: 1px 1px var(--color-black);
 }
-.home .contact p span{
+.home-contact .contact p span{
  color: #fff;
 
 }
-.home .contact a {
+.home-contact .contact a {
   color: #fff;
   text-shadow: 2px 2px var(--color-black);
   text-decoration: underline;
 }
-.home .content h3{
+.home-contact .content h3{
     font-size: 4rem;
     color: #fff;
     line-height: 1.3;
     text-shadow: 5px 5px var(--color-black);
 }
-.home .content p{
+.home-contact .content p{
     font-size: 1.5rem;
     font-weight: 300;
     line-height: 1.8;
