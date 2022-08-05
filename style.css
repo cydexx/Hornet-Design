@@ -497,7 +497,7 @@ display: none;
   font-size: 1rem;
   color: #fff;
   font-weight: 400;
-  padding-top: 1.5rem;
+    padding-top: 1.5rem;
 }
 
 @media screen and (max-width: 991px) {
@@ -558,14 +558,12 @@ display: none;
 
 }
 @media screen and (max-width: 700) {
-
   html {
     font-size:40%;
 }
 
 }
 @media screen and (max-width: 500) {
-
   html {
     font-size:20%;
 }
