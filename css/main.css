@@ -1,4 +1,24 @@
 @charset "UTF-8";
+@-webkit-keyframes animateBorder {
+  to {
+    box-shadow: 0 0 5px 2px #e94f4f;
+  }
+}
+@keyframes animateBorder {
+  to {
+    box-shadow: 0 0 5px 2px #e94f4f;
+  }
+}
+@-webkit-keyframes quickViewAnimation {
+  to {
+    box-shadow: 0 0 5px 2px #1b1b1b;
+  }
+}
+@keyframes quickViewAnimation {
+  to {
+    box-shadow: 0 0 5px 2px #1b1b1b;
+  }
+}
 /*                   SCROLL                */
 ::-webkit-scrollbar {
   width: 1rem;
@@ -114,15 +134,15 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 7%;
+  padding: 0.5rem 7%;
   margin: 2rem 7%;
-  position: -webkit-sticky;
-  position: sticky;
+  position: relative;
   border-radius: 30rem;
-  /*box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);*/
   box-shadow: -0.7rem 0.9rem #1b1b1b;
   top: 2rem;
   border: 0.2rem dashed #1b1b1b;
+  position: -webkit-sticky;
+  position: sticky;
   /*z-index: 1;   box container hover olunca headerın üstüne gelmesini engeller. */
 }
 .header .logo {
@@ -140,13 +160,17 @@ section {
   border-bottom: 0.2rem solid transparent;
 }
 .header .navbar-socials {
-  display: none;
+  padding-left: 5rem;
 }
 .header .navbar-socials a {
   margin: 0 0.2rem;
   font-size: 2rem;
   color: #1b1b1b;
   background-color: transparent;
+}
+.header .bag-button {
+  font-size: 2rem;
+  padding-left: 15.5rem;
 }
 .header .navbar-buttons button {
   cursor: pointer;
@@ -177,7 +201,7 @@ section {
   background-image: url(/images/background.png);
   background-size: cover;
   background-position: center;
-  margin-top: -13.4rem;
+  margin-top: -14.4rem;
   display: flex;
   align-items: center;
   border-bottom: 0.2rem dashed #e94f4f;
@@ -191,6 +215,17 @@ section {
   border-radius: 3rem;
   box-shadow: -0.4rem 0.3rem #1b1b1b;
   border: 2px dashed #1b1b1b;
+}
+.home .content .heading {
+  font-size: 3.5rem;
+}
+.home .content p {
+  font-size: 1.5rem;
+  text-shadow: -1px 1px #fff;
+  color: #1b1b1b;
+}
+.home .content .btn {
+  font-size: 1.5rem;
 }
 
 .home .content:hover {
@@ -333,7 +368,7 @@ section {
   padding: 2rem;
   background-color: #fff;
   border-radius: 2.5rem;
-  min-height: 45rem;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -343,13 +378,35 @@ section {
   margin-left: 0.5rem;
   margin-bottom: 0.5rem;
 }
-.menu .box-container .box img {
+.menu .box-container .box .box-head img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 2rem;
   margin-bottom: 2.5rem;
   box-shadow: -0.3rem 0.3rem 0.5rem 0.3rem #cb3838;
+}
+.menu .box-container .box .box-head .quick-view-button {
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #1b1b1b;
+  box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.49);
+  display: none;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  right: inherit;
+  opacity: 70%;
+}
+.menu .box-container .box .box-head .quick-view-button:hover {
+  background-color: #1b1b1b;
+  text-shadow: 1px 1px #e94f4f;
+  transform: scale(1.1);
+  opacity: 85%;
+  -webkit-animation: 1s quickViewAnimation infinite;
+          animation: 1s quickViewAnimation infinite;
 }
 .menu .box-container .box .box-middle {
   display: grid;
@@ -360,9 +417,18 @@ section {
 }
 .menu .box-container .box .box-middle .product-tags li a {
   font-size: 1rem;
-  padding-bottom: 0.5rem;
   font-weight: bold;
   color: #cb3838;
+  padding: 0.2rem 0;
+  border-radius: 5px;
+}
+.menu .box-container .box .box-middle .product-tags li a:hover {
+  border: 2px dashed #e94f4f;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #cb3838;
+  -webkit-animation: 1s animateBorder infinite;
+          animation: 1s animateBorder infinite;
 }
 .menu .box-container .box .box-middle .product-title {
   font-size: 1.5rem;
@@ -387,21 +453,13 @@ section {
   transform: translateY(-1rem);
   box-shadow: -0.7rem 0.7rem 0.5rem 0.3rem #e94f4f;
 }
-.menu .box-container .box:hover img {
+.menu .box-container .box:hover .box-head img {
   transform: scale(1.1);
   box-shadow: -0.3rem 0.3rem 0.5rem 0.3rem #cb3838;
   border: 1px dashed #e94f4f;
 }
-.menu .box-container .box:hover .box-middle .product-tags li {
-  box-shadow: -0.1rem 0.1rem 0.1rem 0.3rem #e94f4f;
-  border-radius: 0.1rem;
-  border: 1px dashed #e94f4f;
-}
-.menu .box-container .box:hover .box-middle .product-tags li a {
-  font-size: 1rem;
-  padding-bottom: 0.5rem;
-  font-weight: bold;
-  color: #cb3838;
+.menu .box-container .box:hover .box-head .quick-view-button {
+  display: inline-block;
 }
 .menu .box-container .box:hover .box-middle .product-title,
 .menu .box-container .box:hover .box-middle .product-tags,

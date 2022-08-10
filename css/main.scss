@@ -3,6 +3,16 @@ $color-light: #e94f4f;
 $color-black: #1b1b1b;
 $color-white: #fff;
 $smallText: 0.5em;
+@keyframes animateBorder {
+  to {
+    box-shadow: 0 0 5px 2px $color-light;
+  }
+}
+@keyframes quickViewAnimation {
+  to {
+    box-shadow: 0 0 5px 2px $color-black;
+  }
+}
 /*                   SCROLL                */
 ::-webkit-scrollbar {
   width: 1rem;
@@ -104,19 +114,20 @@ section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 7%;
+  padding: 0.5rem 7%;
   margin: 2rem 7%;
-  position: sticky;
+  position: relative;
   border-radius: 30rem;
-  /*box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);*/
   box-shadow: -0.7rem 0.9rem $color-black;
   top: 2rem;
   border: 0.2rem dashed $color-black;
+  position: sticky;
   /*z-index: 1;   box container hover olunca headerın üstüne gelmesini engeller. */
   .logo {
     padding: 0.5rem;
     margin: 0 0;
     width: 100px;
+
     img {
       height: 8rem;
     }
@@ -128,14 +139,17 @@ section {
     border-bottom: 0.2rem solid transparent;
   }
   .navbar-socials {
-    //headerdaki socials logolarını kapatıyorum şimdilik
-    display: none;
+    padding-left: 5rem;
     a {
       margin: 0 0.2rem;
       font-size: 2rem;
       color: $color-black;
       background-color: transparent;
     }
+  }
+  .bag-button {
+    font-size: 2rem;
+    padding-left: 15.5rem;
   }
   .navbar-buttons button {
     cursor: pointer;
@@ -163,7 +177,7 @@ section {
   background-image: url(/images/background.png);
   background-size: cover;
   background-position: center;
-  margin-top: -13.4rem;
+  margin-top: -14.4rem;
   display: flex;
   align-items: center;
   border-bottom: 0.2rem dashed $color-light;
@@ -176,6 +190,17 @@ section {
     border-radius: 3rem;
     box-shadow: -0.4rem 0.3rem $color-black;
     border: 2px dashed $color-black;
+    .heading {
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1.5rem;
+      text-shadow: -1px 1px $color-white;
+      color: $color-black;
+    }
+    .btn {
+      font-size: 1.5rem;
+    }
   }
 }
 .home .content:hover {
@@ -318,7 +343,7 @@ section {
       padding: 2rem;
       background-color: #fff;
       border-radius: 2.5rem;
-      min-height: 45rem;
+      min-height: 50rem;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -327,23 +352,57 @@ section {
       border: 1px dashed $color-light;
       margin-left: 0.5rem;
       margin-bottom: 0.5rem;
-      img {
-        width: 100%;
-        object-fit: cover;
-        border-radius: 2rem;
-        margin-bottom: 2.5rem;
-        box-shadow: -0.3rem 0.3rem 0.5rem 0.3rem $color-main;
+      .box-head {
+        img {
+          width: 100%;
+          object-fit: cover;
+          border-radius: 2rem;
+          margin-bottom: 2.5rem;
+          box-shadow: -0.3rem 0.3rem 0.5rem 0.3rem $color-main;
+        }
+        .quick-view-button {
+          padding: 1rem 3rem;
+          border-radius: 1rem;
+          font-size: 1rem;
+          color: #fff;
+          background-color: $color-black;
+          box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.49);
+          display: none;
+          position: absolute;
+          top: 25%;
+          left: 25%;
+          right: inherit;
+          opacity: 70%;
+          &:hover {
+            background-color: $color-black;
+            text-shadow: 1px 1px $color-light;
+            transform: scale(1.1);
+            opacity: 85%;
+            animation: 1s quickViewAnimation infinite;
+          }
+        }
       }
       .box-middle {
         display: grid;
         gap: 1rem;
-        .product-tags li {
-          display: inline-block;
-          a {
-            font-size: 1rem;
-            padding-bottom: 0.5rem;
-            font-weight: bold;
-            color: $color-main;
+        .product-tags {
+          li {
+            display: inline-block;
+            a {
+              font-size: 1rem;
+              font-weight: bold;
+              color: $color-main;
+              padding: 0.2rem 0;
+              border-radius: 5px;
+
+              &:hover {
+                border: 2px dashed $color-light;
+                font-size: 1rem;
+                font-weight: bold;
+                color: $color-main;
+                animation: 1s animateBorder infinite;
+              }
+            }
           }
         }
         .product-title {
@@ -370,22 +429,17 @@ section {
       &:hover {
         transform: translateY(-1rem);
         box-shadow: -0.7rem 0.7rem 0.5rem 0.3rem $color-light;
-        img {
-          transform: scale(1.1);
-          box-shadow: -0.3rem 0.3rem 0.5rem 0.3rem $color-main;
-          border: 1px dashed $color-light;
-        }
-        .box-middle .product-tags li {
-          box-shadow: -0.1rem 0.1rem 0.1rem 0.3rem $color-light;
-          border-radius: 0.1rem;
-          border: 1px dashed $color-light;
-          a {
-            font-size: 1rem;
-            padding-bottom: 0.5rem;
-            font-weight: bold;
-            color: $color-main;
+        .box-head {
+          img {
+            transform: scale(1.1);
+            box-shadow: -0.3rem 0.3rem 0.5rem 0.3rem $color-main;
+            border: 1px dashed $color-light;
+          }
+          .quick-view-button {
+            display: inline-block;
           }
         }
+
         .box-middle .product-title,
         .box-middle .product-tags,
         .price,
