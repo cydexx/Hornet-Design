@@ -135,11 +135,11 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 7%;
-  margin: 2rem 7%;
+  margin: 0rem 7%;
   position: relative;
   border-radius: 30rem;
   box-shadow: -0.7rem 0.9rem #1b1b1b;
-  top: 2rem;
+  top: 1.5rem;
   border: 0.2rem dashed #1b1b1b;
   /*position: sticky; falan*/
   /*z-index: 1;   box container hover olunca headerın üstüne gelmesini engeller. */
@@ -159,7 +159,7 @@ section {
   border-bottom: 0.2rem solid transparent;
 }
 .header .navbar-socials {
-  padding-left: 5rem;
+  padding-left: 8rem;
 }
 .header .navbar-socials a {
   margin: 0 0.2rem;
@@ -169,7 +169,7 @@ section {
 }
 .header .bag-button {
   font-size: 2rem;
-  padding-left: 15.5rem;
+  padding-left: 12.5rem;
 }
 .header .navbar-buttons button {
   cursor: pointer;
@@ -200,7 +200,7 @@ section {
   background-image: url(/images/background.png);
   background-size: cover;
   background-position: center;
-  margin-top: -14.4rem;
+  margin-top: -10.4rem;
   display: flex;
   align-items: center;
   border-bottom: 0.2rem dashed #e94f4f;
@@ -417,7 +417,7 @@ section {
 .menu .box-container .box .box-middle .product-tags li a {
   font-size: 1rem;
   font-weight: bold;
-  color: #cb3838;
+  color: #e94f4f;
   padding: 0.2rem 0;
   border-radius: 5px;
 }
@@ -432,16 +432,19 @@ section {
 .menu .box-container .box .box-middle .product-title {
   font-size: 1.5rem;
   font-weight: 900;
+  color: #cb3838;
 }
 .menu .box-container .box .price {
-  font-size: 1rem;
+  font-size: 1.1rem;
   padding: 0.5rem 0;
   font-weight: 500;
+  color: #1b1b1b;
 }
 .menu .box-container .box .price span {
   text-decoration: line-through;
   font-weight: 300;
-  font-size: 0.7rem;
+  font-size: 0.9rem;
+  color: #1b1b1b;
 }
 .menu .box-container .box .btn {
   font-size: 1rem;
@@ -459,6 +462,9 @@ section {
 }
 .menu .box-container .box:hover .box-head .quick-view-button {
   display: inline-block;
+}
+.menu .box-container .box:hover .product-title {
+  text-shadow: -1px 1px #e94f4f;
 }
 .menu .box-container .box:hover .box-middle .product-title,
 .menu .box-container .box:hover .box-middle .product-tags,
@@ -549,6 +555,9 @@ section {
   .home {
     margin-top: -15.4rem;
   }
+  .home .content {
+    max-width: 100%;
+  }
   .header {
     padding: 1.5rem 2rem;
   }
@@ -561,6 +570,7 @@ section {
     height: 7rem;
   }
   .header .navbar {
+    display: none; /*şimdilik kapadım açıcam unutma*/
     position: absolute;
     top: 95%;
     background-color: #fff;
@@ -578,6 +588,19 @@ section {
   }
   .header .navbar .active {
     right: 3rem;
+  }
+  .header .navbar-socials {
+    display: none;
+  }
+  .header .navbar-socials .bag-button {
+    display: inline-block;
+  }
+  .menu .design-navs {
+    display: inline-flexbox;
+  }
+  .menu .design-navs .design-nav .btn {
+    font-size: 0.8rem;
+    padding: 1rem 0.75rem;
   }
   .section {
     padding: 2rem;

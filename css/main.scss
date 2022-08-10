@@ -115,11 +115,11 @@ section {
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 7%;
-  margin: 2rem 7%;
+  margin: 0rem 7%;
   position: relative;
   border-radius: 30rem;
   box-shadow: -0.7rem 0.9rem $color-black;
-  top: 2rem;
+  top: 1.5rem;
   border: 0.2rem dashed $color-black;
   /*position: sticky; falan*/
   /*z-index: 1;   box container hover olunca headerın üstüne gelmesini engeller. */
@@ -139,7 +139,7 @@ section {
     border-bottom: 0.2rem solid transparent;
   }
   .navbar-socials {
-    padding-left: 5rem;
+    padding-left: 8rem;
     a {
       margin: 0 0.2rem;
       font-size: 2rem;
@@ -149,7 +149,7 @@ section {
   }
   .bag-button {
     font-size: 2rem;
-    padding-left: 15.5rem;
+    padding-left: 12.5rem;
   }
   .navbar-buttons button {
     cursor: pointer;
@@ -177,7 +177,7 @@ section {
   background-image: url(/images/background.png);
   background-size: cover;
   background-position: center;
-  margin-top: -14.4rem;
+  margin-top: -10.4rem;
   display: flex;
   align-items: center;
   border-bottom: 0.2rem dashed $color-light;
@@ -391,7 +391,7 @@ section {
             a {
               font-size: 1rem;
               font-weight: bold;
-              color: $color-main;
+              color: $color-light;
               padding: 0.2rem 0;
               border-radius: 5px;
 
@@ -408,16 +408,19 @@ section {
         .product-title {
           font-size: 1.5rem;
           font-weight: 900;
+          color: $color-main;
         }
       }
       .price {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0.5rem 0;
         font-weight: 500;
+        color: $color-black;
         span {
           text-decoration: line-through;
           font-weight: 300;
-          font-size: 0.7rem;
+          font-size: 0.9rem;
+          color: $color-black;
         }
       }
       .btn {
@@ -439,7 +442,9 @@ section {
             display: inline-block;
           }
         }
-
+        .product-title {
+          text-shadow: -1px 1px $color-light;
+        }
         .box-middle .product-title,
         .box-middle .product-tags,
         .price,
@@ -530,6 +535,9 @@ section {
   }
   .home {
     margin-top: -15.4rem;
+    .content {
+      max-width: 100%;
+    }
   }
   .header {
     padding: 1.5rem 2rem;
@@ -542,6 +550,7 @@ section {
       }
     }
     .navbar {
+      display: none; /*şimdilik kapadım açıcam unutma*/
       position: absolute;
       top: 95%;
       background-color: #fff;
@@ -549,6 +558,7 @@ section {
       width: 30rem;
       box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
       right: -100%;
+
       a {
         color: $color-black;
         display: block;
@@ -558,6 +568,23 @@ section {
       }
       .active {
         right: 3rem;
+      }
+    }
+    .navbar-socials {
+      display: none;
+      .bag-button {
+        display: inline-block;
+      }
+    }
+  }
+  .menu {
+    .design-navs {
+      display: inline-flexbox;
+      .design-nav {
+        .btn {
+          font-size: 0.8rem;
+          padding: 1rem 0.75rem;
+        }
       }
     }
   }
