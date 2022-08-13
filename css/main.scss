@@ -541,12 +541,14 @@ section {
   }
   .header {
     padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-content: center;
     .logo {
       padding: 0.5rem;
       margin: 0 3rem;
       width: 100px;
       img {
-        height: 7rem;
+        height: 8rem;
       }
     }
     .navbar {
@@ -572,9 +574,6 @@ section {
     }
     .navbar-socials {
       display: none;
-      .bag-button {
-        display: inline-block;
-      }
     }
   }
   .menu {

@@ -560,6 +560,8 @@ section {
   }
   .header {
     padding: 1.5rem 2rem;
+    flex-direction: column;
+    align-content: center;
   }
   .header .logo {
     padding: 0.5rem;
@@ -567,7 +569,7 @@ section {
     width: 100px;
   }
   .header .logo img {
-    height: 7rem;
+    height: 8rem;
   }
   .header .navbar {
     display: none; /*şimdilik kapadım açıcam unutma*/
@@ -591,9 +593,6 @@ section {
   }
   .header .navbar-socials {
     display: none;
-  }
-  .header .navbar-socials .bag-button {
-    display: inline-block;
   }
   .menu .design-navs {
     display: inline-flexbox;
