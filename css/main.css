@@ -141,7 +141,7 @@ section {
   box-shadow: -0.7rem 0.9rem #1b1b1b;
   top: 1.5rem;
   border: 0.2rem dashed #1b1b1b;
-  /*position: sticky; falan*/
+  /*position: sticky; sayfada aşağı gidince header bizle gelicek ama box:hover görüntüsü kötüleşiyor çözüm bulmam lzm*/
   /*z-index: 1;   box container hover olunca headerın üstüne gelmesini engeller. */
 }
 .header .logo {
